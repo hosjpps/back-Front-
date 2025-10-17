@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Портфолио</title>
+    <link rel="icon" type="image/png" href="../images/icons/free-icon-round-16199695.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <img src="../images/icons/maserati-logo.svg" alt="Maserati" width="32" height="32" class="me-2">Портфолио
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diary.html">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 76px;">
+        <!-- Заголовок страницы -->
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">Мои проекты</h1>
+                <p class="lead">Коллекция моих работ и достижений</p>
+            </div>
+        </section>
+
+        <!-- Фильтры и поиск -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="filter" id="filter-all" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="filter-all" data-filter="all">Все</label>
+                            
+                            <input type="radio" class="btn-check" name="filter" id="filter-web" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="filter-web" data-filter="web">Веб</label>
+                            
+                            <input type="radio" class="btn-check" name="filter" id="filter-mobile" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="filter-mobile" data-filter="mobile">Мобильные</label>
+                            
+                            <input type="radio" class="btn-check" name="filter" id="filter-design" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="filter-design" data-filter="design">Дизайн</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="project-search" placeholder="Поиск проектов...">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сетка проектов -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4" id="projects-container">
+                <!-- Проект 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/photo_2025-10-17 11.59.50.jpeg" class="card-img-top" alt="Личный сайт">
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <span class="badge bg-success">Завершен</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Личный сайт-портфолио</h5>
+                            <p class="card-text">Адаптивный личный сайт с современным дизайном и анимациями. Включает разделы о себе, портфолио и контакты.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">HTML5</span>
+                                <span class="badge bg-primary me-1">CSS3</span>
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Декабрь 2024</small>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-primary" title="Просмотр">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/hosjpps" class="btn btn-sm btn-outline-dark" title="GitHub" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="app">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/photo_2025-10-17 11.59.53.jpeg" class="card-img-top" alt="Todo приложение">
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <span class="badge bg-success">Завершен</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Todo приложение</h5>
+                            <p class="card-text">Интерактивное приложение для управления задачами с возможностью добавления, редактирования и удаления задач.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-info me-1">Node.js</span>
+                                <span class="badge bg-info me-1">MongoDB</span>
+                                <span class="badge bg-info">Express</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Ноябрь 2024</small>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-primary" title="Просмотр">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/hosjpps" class="btn btn-sm btn-outline-dark" title="GitHub" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/photo_2025-10-17 11.59.55.jpeg" class="card-img-top alt="Интернет-магазин">
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <span class="badge bg-warning text-dark">В разработке</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Интернет-магазин</h5>
+                            <p class="card-text">SPA магазин с корзиной, фильтрацией товаров и системой оплаты. Полнофункциональное решение для e-commerce.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">React</span>
+                                <span class="badge bg-success me-1">Redux</span>
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-success">PostgreSQL</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Октябрь 2024</small>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-primary" title="Просмотр">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/hosjpps" class="btn btn-sm btn-outline-dark" title="GitHub" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="design">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/photo_2025-10-17 12.00.00.jpeg" class="card-img-top" alt="Дизайн мобильного приложения">
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <span class="badge bg-success">Завершен</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Дизайн мобильного приложения</h5>
+                            <p class="card-text">UI/UX дизайн для мобильного приложения фитнес-трекера с современным интерфейсом и удобной навигацией.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary me-1">Figma</span>
+                                <span class="badge bg-secondary me-1">Adobe XD</span>
+                                <span class="badge bg-secondary">Photoshop</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Сентябрь 2024</small>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-primary" title="Просмотр">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="app">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/photo_2025-10-17 12.09.43.jpeg" class="card-img-top" alt="Погодное приложение">
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <span class="badge bg-success">Завершен</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Погодное приложение</h5>
+                            <p class="card-text">Приложение для отображения текущей погоды и прогноза с использованием внешнего API и геолокации.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                                <span class="badge bg-warning text-dark me-1">API</span>
+                                <span class="badge bg-warning text-dark me-1">CSS3</span>
+                                <span class="badge bg-warning text-dark">HTML5</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Август 2024</small>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-primary" title="Просмотр">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/hosjpps" class="btn btn-sm btn-outline-dark" title="GitHub" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="../images/photo_2025-10-17 12.09.52.jpeg" class="card-img-top" alt="Блог-платформа">
+                            <div class="position-absolute top-0 end-0 p-2">
+                                <span class="badge bg-secondary">Планируется</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Блог-платформа</h5>
+                            <p class="card-text">Полнофункциональная платформа для ведения блога с системой комментариев, тегов и поиска.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-danger me-1">Vue.js</span>
+                                <span class="badge bg-danger me-1">Express</span>
+                                <span class="badge bg-danger me-1">MySQL</span>
+                                <span class="badge bg-danger">JWT</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Июль 2024</small>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-sm btn-outline-primary" title="Просмотр">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/hosjpps" class="btn btn-sm btn-outline-dark" title="GitHub" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i>example@email.com</p>
+                    <p><i class="bi bi-telephone me-2"></i>+7 (999) 123-45-67</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Социальные сети</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/hosjpps" class="text-white fs-4" aria-label="GitHub" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white-50 text-decoration-none">Главная</a></li>
+                        <li><a href="projects.html" class="text-white-50 text-decoration-none">Проекты</a></li>
+                        <li><a href="diary.html" class="text-white-50 text-decoration-none">Дневник</a></li>
+                        <li><a href="contacts.html" class="text-white-50 text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Портфолио. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/filters.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+    <script src="../scripts/projects.js"></script>
+</body>
+</html>
